@@ -14,11 +14,8 @@ import { InvestmentResultsComponent } from './investment-results/investment-resu
   imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
 })
 export class AppComponent {
-  investmentResults: InvestmentResult[];
+  investmentResults?: InvestmentResult[];
 
-  constructor() {
-    this.investmentResults = [];
-  }
   onCalculate(data: InvestmentInput) {
     const { duration, annualInvestment, initialInvestment, expectedReturn } =
       data;
