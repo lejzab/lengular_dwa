@@ -10,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './investment-results.component.css',
 })
 export class InvestmentResultsComponent {
-  @Input({ required: true }) investmentResults: InvestmentResult[] = [];
+  @Input({ required: true }) investmentResults!: InvestmentResult[];
 }
