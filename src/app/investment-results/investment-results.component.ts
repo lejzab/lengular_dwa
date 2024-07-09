@@ -12,5 +12,5 @@ import { InvestmentService } from '../investment.service';
 })
 export class InvestmentResultsComponent {
   private investmentService = inject(InvestmentService);
-  investmentResults = computed(this.investmentService.results);
+  investmentResults = computed(() => this.investmentService.results());
 }
